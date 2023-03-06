@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/FragmentOrder"
+        android:enabled="true"
+        android:icon="@drawable/ic_order_list"
+        android:title="Order"/>
+
+    <item
+        android:id="@+id/FragmentMainActivity"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/FragmentProductSearch"
+        android:icon="@drawable/ic_baseline_search"
+        android:title="Search"/>
+
+</menu>

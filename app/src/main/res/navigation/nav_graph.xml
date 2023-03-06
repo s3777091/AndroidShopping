@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FragmentMainActivity">
+
+    <fragment
+        android:id="@+id/FragmentOrder"
+        android:name="com.dathuynh.kishop.Fragment.FragmentOrder"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/FragmentMainActivity"
+        android:name="com.dathuynh.kishop.Fragment.FragmentMainActivity"
+        android:label="fragment_main_activity"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/FragmentProductSearch"
+        android:name="com.dathuynh.kishop.Fragment.FragmentProductSearch"
+        android:label="fragment_product_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

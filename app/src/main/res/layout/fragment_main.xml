@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FragmentMainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/parent.contentLayout"
+        android:paddingLeft="@dimen/normalPadding"
+        android:paddingRight="@dimen/normalPadding"
+        android:paddingBottom="@dimen/normalPadding">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:orientation="vertical">
+
+                <ViewFlipper
+                    android:id="@+id/vewlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <RelativeLayout
+                    android:id="@+id/click_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="60dp"
+                        android:background="@drawable/refer_earn_button"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Check kishop web\n to get more product"
+                            android:textAlignment="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:src="@drawable/refer_icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Phone: " />
+
+                    <TextView
+                        style="@style/viewParent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/see_more_recommend"
+                        android:text="See All"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/headerMoreTextSize"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_view_recommend"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Laptop: "
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        style="@style/viewParent"
+                        android:id="@+id/see_more_ki_shop"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="See All"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/headerMoreTextSize"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_view_falava"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Game: "
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        style="@style/viewParent"
+                        android:id="@+id/see_more_gamming"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="See All"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/headerMoreTextSize"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_view_gamming"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Home and life: " />
+
+                    <TextView
+                        android:id="@+id/see_more_home"
+                        style="@style/viewParent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="See All"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/headerMoreTextSize"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_view_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:scrollingCache="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

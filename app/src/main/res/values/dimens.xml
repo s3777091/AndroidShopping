@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+
+
+
+    <dimen name="headerTextSize">25sp</dimen>
+    <dimen name="headerMoreTextSize">18sp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="frutorial_title">15sp</dimen>
+    <dimen name="card_maincourse_elevation">2dp</dimen>
+    <dimen name="card_image_elevation">4dp</dimen>
+    <dimen name="card_itemcourse_elevation">2dp</dimen>
+    <dimen name="card_item_tutorial_elevation">5dp</dimen>
+
+
+    <!--    Dashboard-->
+    <dimen name="normalPadding">20dp</dimen>
+    <dimen name="normalPaddingDouble">30dp</dimen>
+    <dimen name="staggedmarginbottom">21dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="horizontal_dashboard">32dp</dimen>
+    <dimen name="img_card_height">120dp</dimen>
+    <dimen name="drawable_left">5dp</dimen>
+    <dimen name="card_course_dashboard_elevation">.1dp</dimen>
+
+    <dimen name="vertical_search">10dp</dimen>
+    <dimen name="card_radius">14dp</dimen>
+    <dimen name="horizontal_card">8dp</dimen>
+
+    <dimen name="top_text_card">14dp</dimen>
+    <dimen name="top_text_subtitle_card">4dp</dimen>
+    <dimen name="d_number_courses">11sp</dimen>
+
+    <dimen name="viewpager_next_item_visible">26dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42dp</dimen>
+    <dimen name="viewpager_next_item_visible_testing">29dp</dimen>
+
+    <dimen name="viewpager_current_item_horizontal_margin_testing">60dp</dimen>
+
+
+    <dimen name="actionBarSize">56dp</dimen>
+
+    <dimen name="viewpager_margin_overlap">-60dp</dimen>
+    <dimen name="viewpager_margin_overlap_payment">-30dp</dimen>
+
+    <!--genaral spacing-->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

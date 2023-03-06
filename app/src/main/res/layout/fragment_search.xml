@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent.contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fragment.FragmentProductSearch">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffba60">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingLeft="@dimen/horizontal_dashboard"
+                android:paddingTop="@dimen/fab_margin"
+                android:paddingRight="@dimen/horizontal_dashboard"
+
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="40"
+                    android:fontFamily="@font/opensans_italic"
+                    android:text="Hey, What would you like to buy today ?"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/button_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:src="@drawable/refer_icon" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtseach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/horizontal_dashboard"
+                android:layout_marginTop="@dimen/normalPadding"
+                android:layout_marginRight="@dimen/horizontal_dashboard"
+                android:background="@drawable/container_search"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:drawablePadding="@dimen/drawable_left"
+                android:fontFamily="@font/opensans_italic"
+                android:gravity="center_vertical"
+                android:hint="Search Here"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+
+                android:maxLines="1"
+                android:paddingLeft="@dimen/normalPadding"
+                android:paddingTop="@dimen/vertical_search"
+                android:paddingRight="@dimen/normalPadding"
+                android:paddingBottom="@dimen/vertical_search"
+
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/frutorial_title"
+
+                android:textSize="14sp">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="80dp"
+                        android:background="@color/back_courses"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/horizontal_card"
+                        android:layout_marginBottom="@dimen/horizontal_card"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_view_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/horizontal_dashboard"
+                            android:layout_marginTop="@dimen/normalPadding"
+                            android:layout_marginRight="@dimen/horizontal_dashboard"
+                            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+
+                            app:spanCount="2"
+                            tools:itemCount="7"
+                            tools:listitem="@layout/item_card">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

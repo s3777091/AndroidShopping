@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_supervised_user_circle"
+            android:title="Update Profile" />
+
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_baseline_login"
+            android:title="Login User" />
+
+        <item
+            android:id="@+id/nav_teach"
+            android:icon="@drawable/ic_baseline_whatshot"
+            android:title="All Product" />
+    </group>
+
+    <item android:title="@string/nav_title_toggle_theme">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_menu"
+                android:title="@string/nav_title_share"
+                android:visible="false" />
+            <item
+                android:id="@+id/nav_dark_mode"
+                android:icon="@drawable/ic_baseline_dark_mode"
+                android:title="@string/nav_title_toggle_theme" />
+        </menu>
+    </item>
+
+</menu>

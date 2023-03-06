@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/playstore"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/playstore"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Kishop"
+        tools:targetApi="31">
+        <activity
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".Activity.TechnologyActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.DetailActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+
+        <activity android:name=".Activity.CartActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.PaymentActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.LoginActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.RegisterActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.RecommendActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.KishopActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.HomeAndLifeActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.GammingActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+        <activity android:name=".Activity.ProfileActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kishop</string>
+
+    <string name="open_sans_bold">open_sans_bold</string>
+    <string name="open_sans_regular">open_sans_regular</string>
+    <string name="open_sans_semi_bold">open_sans_semi_bold</string>
+    <string name="open_sans_italic">open_sans_italic</string>
+    <string name="nav_title_share">Share</string>
+    <string name="nav_title_toggle_theme">Toggle Theme</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/parent.contentLayout"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACT DETAILS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/grey_40" />
+
+        <EditText
+            android:textColor="@color/contentTextColor"
+            android:id="@+id/shipping_name"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:background="@drawable/edit_text_round_bg_outline"
+            android:hint="Name"
+            android:minHeight="@dimen/spacing_xmlarge" />
+
+        <EditText
+            android:textColor="@color/contentTextColor"
+            android:id="@+id/shipping_email"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@drawable/edit_text_round_bg_outline"
+            android:hint="Email"
+            android:minHeight="@dimen/spacing_xmlarge" />
+
+        <EditText
+            android:textColor="@color/contentTextColor"
+            android:id="@+id/shipping_phone"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@drawable/edit_text_round_bg_outline"
+            android:hint="Phone"
+            android:minHeight="@dimen/spacing_xmlarge"
+            android:text="(859) 261-0876" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="SHIPPING ADDRESS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/grey_40"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:textColor="@color/contentTextColor"
+            android:id="@+id/shipping_address"
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:background="@drawable/edit_text_round_bg_outline"
+            android:hint="Address"
+            android:minHeight="@dimen/spacing_xmlarge" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
